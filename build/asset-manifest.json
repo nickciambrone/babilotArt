@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/babilotArt/home/static/css/main.02a8261d.css",
+    "main.js": "/babilotArt/home/static/js/main.1a8994ac.js",
+    "static/js/787.32b8b533.chunk.js": "/babilotArt/home/static/js/787.32b8b533.chunk.js",
+    "static/media/cake.png": "/babilotArt/home/static/media/cake.3691fadb138c682d754b.png",
+    "static/media/brunch.png": "/babilotArt/home/static/media/brunch.4a13ed73fc62f59e4d8d.png",
+    "static/media/butterfly.png": "/babilotArt/home/static/media/butterfly.4fa3b7ead49acea6bac1.png",
+    "static/media/kid.jpeg": "/babilotArt/home/static/media/kid.e7df47fb45e65b02ad55.jpeg",
+    "static/media/selfPortrait.jpeg": "/babilotArt/home/static/media/selfPortrait.ee20e53a0ac4e4908538.jpeg",
+    "static/media/taco.jpeg": "/babilotArt/home/static/media/taco.42e57ffd5587875b7706.jpeg",
+    "static/media/woman.jpeg": "/babilotArt/home/static/media/woman.dc90a4b579a5aa3bf04f.jpeg",
+    "static/media/farmer.jpeg": "/babilotArt/home/static/media/farmer.cb92fcee4e3effbf78dc.jpeg",
+    "static/media/kushcake.png": "/babilotArt/home/static/media/kushcake.b47ce02bdda59c7a0d32.png",
+    "static/media/sunnyTits.jpeg": "/babilotArt/home/static/media/sunnyTits.6a38656df5ad373eb092.jpeg",
+    "static/media/gabe.jpeg": "/babilotArt/home/static/media/gabe.d084ea45d40af4464789.jpeg",
+    "static/media/stillLife.jpeg": "/babilotArt/home/static/media/stillLife.45e8ed06188bd46a0846.jpeg",
+    "static/media/windowGirl.jpeg": "/babilotArt/home/static/media/windowGirl.21ee554e9f5a24277beb.jpeg",
+    "static/media/logo.svg": "/babilotArt/home/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/babilotArt/home/index.html",
+    "main.02a8261d.css.map": "/babilotArt/home/static/css/main.02a8261d.css.map",
+    "main.1a8994ac.js.map": "/babilotArt/home/static/js/main.1a8994ac.js.map",
+    "787.32b8b533.chunk.js.map": "/babilotArt/home/static/js/787.32b8b533.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02a8261d.css",
+    "static/js/main.1a8994ac.js"
+  ]
+}
