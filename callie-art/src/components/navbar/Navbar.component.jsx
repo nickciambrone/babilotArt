@@ -65,16 +65,16 @@ const Navbar = () => {
                 <span className="nav-text"> Portfolio</span>
               </div>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="/portfolio/graphic-design">
+                <a className="dropdown-item" href="/babilotArt/portfolio/graphic-design">
                   Graphic Design
                 </a>
-                <a className="dropdown-item" href="/portfolio/drawing">
+                <a className="dropdown-item" href="/babilotArt/portfolio/drawing">
                   Drawing
                 </a>
-                <a className="dropdown-item" href="/portfolio/painting">
+                <a className="dropdown-item" href="/babilotArt/portfolio/painting">
                   Painting
                 </a>
-                <a className="dropdown-item" href="/portfolio/photography">
+                <a className="dropdown-item" href="/babilotArt/portfolio/photography">
                   Photography
                 </a>
               </div>
