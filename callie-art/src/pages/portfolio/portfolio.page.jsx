@@ -17,7 +17,7 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio">
-      {window.location.pathname === "/portfolio/graphic-design" ? (
+      {window.location.pathname === "/babilotArt/portfolio/graphic-design" ? (
         <div
           className="graphic-design-section portfolio-section"
           style={{ display: "flex" }}
@@ -35,7 +35,7 @@ const Portfolio = () => {
       ) : (
         ""
       )}
-      {window.location.pathname === "/portfolio/drawing" ? (
+      {window.location.pathname === "/babilotArt/portfolio/drawing" ? (
         <div
           className="drawing-section portfolio-section"
           style={{ display: "flex" }}
@@ -53,7 +53,7 @@ const Portfolio = () => {
       ) : (
         ""
       )}
-      {window.location.pathname === "/portfolio/painting" ? (
+      {window.location.pathname === "/babilotArt/portfolio/painting" ? (
         <div
           className="painting-section portfolio-section"
           style={{ display: "flex" }}
@@ -71,7 +71,7 @@ const Portfolio = () => {
       ) : (
         ""
       )}
-      {window.location.pathname === "/portfolio/photography" ? (
+      {window.location.pathname === "/babilotArt/portfolio/photography" ? (
         <div
           className="photography-section portfolio-section"
           style={{ display: "flex" }}
