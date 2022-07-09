@@ -1,0 +1,18 @@
+@media (max-width: 480px) {
+    .portfolio-section{
+        flex-direction: column;
+    }
+
+}
+@media (min-width: 480px) {
+    .portfolio-item{
+        width: 33%;
+    }
+    .portfolio-item{
+        text-align: left;
+    }
+
+}
+.portfolio-item{
+    cursor: pointer
+}
