@@ -43,7 +43,7 @@ const Navbar = () => {
             <li className="nav-item active">
               <div className="nav-link" href="#">
                 <div
-                  onClick={() => navigate("/home")}
+                  onClick={() => navigate("/babilotArt/home")}
                   style={{ width: "14%", marginLeft: "43%" }}
                 >
                   <span className="nav-text">Home</span>
@@ -83,7 +83,7 @@ const Navbar = () => {
               <div
                 className="nav-link"
                 href="#"
-                onClick={() => navigate("/resume")}
+                onClick={() => navigate("/babilotArt/resume")}
               >
                 <span className="nav-text">Resume</span>{" "}
                 <span className="sr-only">(current)</span>
@@ -120,7 +120,7 @@ const Navbar = () => {
               <div
                 className="nav-link"
                 href="#"
-                onClick={() => navigate("/contact")}
+                onClick={() => navigate("/babilotArt/contact")}
               >
                 <span className="nav-text">Contact</span>{" "}
                 <span className="sr-only">(current)</span>
