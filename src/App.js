@@ -21,7 +21,12 @@ function App() {
         <Route path="/babilotArt/home" element={<Home />}></Route>
         <Route path="/babilotArt/shop" element={<Shop />}></Route>
         <Route path="/babilotArt/contact" element={<Contact />}></Route>
-        <Route path="/babilotArt/portfolio/:category" element={<Portfolio />}></Route>
+        <Route path="/babilotArt/portfolio" element={<Portfolio />}></Route>
+        <Route path="/babilotArt/portfolio/graphic-design" element={<Portfolio />}></Route>
+        <Route path="/babilotArt/portfolio/drawing" element={<Portfolio />}></Route>
+        <Route path="/babilotArt/portfolio/painting" element={<Portfolio />}></Route>
+        <Route path="/babilotArt/portfolio/photography" element={<Portfolio />}></Route>
+
         <Route path="/babilotArt/resume" element={<Resume />}></Route>
       </Routes>
     </div>
