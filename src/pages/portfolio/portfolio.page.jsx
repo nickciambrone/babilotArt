@@ -11,86 +11,215 @@ import farmer from "./farmer.jpeg";
 import windowGirl from "./windowGirl.jpeg";
 import taco from "./taco.jpeg";
 import kid from "./kid.jpeg";
-import './portfolio.styles.scss'
-const Portfolio = () => {
-  console.log(window.location.pathname);
+import "./portfolio.styles.scss";
+import PortfolioItemDetails from "./portfolio-item-details/portfolio-item-details.component";
+class Portfolio extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedImage: false,
+      imgPaths: [],
+    };
+  }
+  render() {
+    const setSelectedImageFalse= () =>{
+      this.setState({selectedImage:false})
+    }
 
-  return (
-    <div className="portfolio">
-      {window.location.pathname === "/babilotArt/portfolio/graphic-design" ? (
-        <div
-          className="graphic-design-section portfolio-section"
-          style={{ display: "flex" }}
-        >
-          <div className="graphic-design portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={brunch} />
+    return (
+      <div className="portfolio">
+        {!this.state.selectedImage ? (
+          <div className="portfolio-full">
+            {window.location.pathname === "/portfolio/graphic-design" ? (
+              <div
+                className="graphic-design-section portfolio-section"
+                style={{ display: "flex" }}
+              >
+                <div className="graphic-design portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({
+                        selectedImage: "1",
+                        imgPaths: ["cake.png", "farmer.jpeg"],
+                      })
+                    }
+                    id="1"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={brunch}
+                  />
+                </div>
+                <div className="graphic-design portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "2", imgPaths: [""] })
+                    }
+                    id="2"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={cake}
+                  />
+                </div>
+                <div className="graphic-design portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "3", imgPaths: [""] })
+                    }
+                    id="3"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={kushcake}
+                  />
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+            {window.location.pathname === "/portfolio/drawing" ? (
+              <div
+                className="drawing-section portfolio-section"
+                style={{ display: "flex" }}
+              >
+                <div className="drawing portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "4", imgPaths: [""] })
+                    }
+                    id="4"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={stillLife}
+                  />
+                </div>
+                <div className="drawing portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "5", imgPaths: [""] })
+                    }
+                    id="5"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={gabe}
+                  />
+                </div>
+                <div className="drawing portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "6", imgPaths: [""] })
+                    }
+                    id="6"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={selfPortrait}
+                  />
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+            {window.location.pathname === "/portfolio/painting" ? (
+              <div
+                className="painting-section portfolio-section"
+                style={{ display: "flex" }}
+              >
+                <div className="painting portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "7", imgPaths: [""] })
+                    }
+                    id="7"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={woman}
+                  />
+                </div>
+                <div className="painting portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "8", imgPaths: [""] })
+                    }
+                    id="8"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={farmer}
+                  />
+                </div>
+                <div className="painting portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "9", imgPaths: [""] })
+                    }
+                    id="9"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={sunnyTits}
+                  />
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+            {window.location.pathname === "/portfolio/photography" ? (
+              <div
+                className="photography-section portfolio-section"
+                style={{ display: "flex" }}
+              >
+                <div className="photography portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "1", imgPaths: [""] })
+                    }
+                    id="10"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={windowGirl}
+                  />
+                </div>
+                <div className="photography portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "1", imgPaths: [""] })
+                    }
+                    id="11"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={taco}
+                  />
+                </div>
+                <div className="photography portfolio-item">
+                  <img
+                    onClick={() =>
+                      this.setState({ selectedImage: "1", imgPaths: [""] })
+                    }
+                    id="12"
+                    className="portfolio-image"
+                    width="80%"
+                    style={{ marginLeft: "10%" }}
+                    src={kid}
+                  />
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
           </div>
-          <div className="graphic-design portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={cake} />
-          </div>
-          <div className="graphic-design portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={kushcake} />
-          </div>
-        </div>
-      ) : (
-        ""
-      )}
-      {window.location.pathname === "/babilotArt/portfolio/drawing" ? (
-        <div
-          className="drawing-section portfolio-section"
-          style={{ display: "flex" }}
-        >
-          <div className="drawing portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={stillLife} />
-          </div>
-          <div className="drawing portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={gabe} />
-          </div>
-          <div className="drawing portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={selfPortrait} />
-          </div>
-        </div>
-      ) : (
-        ""
-      )}
-      {window.location.pathname === "/babilotArt/portfolio/painting" ? (
-        <div
-          className="painting-section portfolio-section"
-          style={{ display: "flex" }}
-        >
-          <div className="painting portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={woman} />
-          </div>
-          <div className="painting portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={farmer} />
-          </div>
-          <div className="painting portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={sunnyTits} />
-          </div>
-        </div>
-      ) : (
-        ""
-      )}
-      {window.location.pathname === "/babilotArt/portfolio/photography" ? (
-        <div
-          className="photography-section portfolio-section"
-          style={{ display: "flex" }}
-        >
-          <div className="photography portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={windowGirl} />
-          </div>
-          <div className="photography portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={taco} />
-          </div>
-          <div className="photography portfolio-item">
-            <img width="80%" style={{ marginLeft: "10%" }} src={kid} />
-          </div>
-        </div>
-      ) : (
-        ""
-      )}
-    </div>
-  );
-};
+        ) : (
+          <PortfolioItemDetails itemId={this.state.selectedImage} goBack = {setSelectedImageFalse} imgPaths = {this.state.imgPaths}/>
+        )}
+      </div>
+    );
+  }
+}
 
 export default Portfolio;

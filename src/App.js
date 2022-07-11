@@ -18,16 +18,11 @@ function App() {
       </div>
       <div style = {{marginLeft:'6%', width:'88%', paddingBottom:'80px', paddingTop:'20px'}}>
       <Routes>
-        <Route path="/babilotArt/home" element={<Home />}></Route>
-        <Route path="/babilotArt/shop" element={<Shop />}></Route>
-        <Route path="/babilotArt/contact" element={<Contact />}></Route>
-        <Route path="/babilotArt/portfolio" element={<Portfolio />}></Route>
-        <Route path="/babilotArt/portfolio/graphic-design" element={<Portfolio />}></Route>
-        <Route path="/babilotArt/portfolio/drawing" element={<Portfolio />}></Route>
-        <Route path="/babilotArt/portfolio/painting" element={<Portfolio />}></Route>
-        <Route path="/babilotArt/portfolio/photography" element={<Portfolio />}></Route>
-
-        <Route path="/babilotArt/resume" element={<Resume />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/shop" element={<Shop />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path={`/portfolio/:category`} element={<Portfolio />}></Route>
+        <Route path="/resume" element={<Resume />}></Route>
       </Routes>
     </div>
     </div>

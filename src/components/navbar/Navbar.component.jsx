@@ -1,17 +1,9 @@
 import React from "react";
 import "./Navbar.styles.scss";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , Link} from 'react-router-dom';
+
 const Navbar = () => {
   let navigate = useNavigate();
-  const navItems = [
-    ["Home", ""],
-    ["Resume", ""],
-    ["Portfolio", ["Graphic Design", "Drawing", "Painting", "Photography"]],
-    ["Contact", ""],
-    ["Shop", ""],
-  ];
- 
-
   return (
     // <div className = 'nav-bar' style = {{display:'flex', justifyContent: 'space-evenly', backgroundColor:'#563d7c'}}>
     //     {navItems.map(ele=><NavItem item = {ele}/>)}
@@ -43,7 +35,7 @@ const Navbar = () => {
             <li className="nav-item active">
               <div className="nav-link" href="#">
                 <div
-                  onClick={() => navigate("/babilotArt/home")}
+                  onClick={() => navigate("/")}
                   style={{ width: "14%", marginLeft: "43%" }}
                 >
                   <span className="nav-text">Home</span>
@@ -65,16 +57,16 @@ const Navbar = () => {
                 <span className="nav-text"> Portfolio</span>
               </div>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="/babilotArt/portfolio/graphic-design">
+                <a className="dropdown-item" href= "/portfolio/graphic-design">
                   Graphic Design
                 </a>
-                <a className="dropdown-item" href="/babilotArt/portfolio/drawing">
+                <a className="dropdown-item" href= "/portfolio/drawing">
                   Drawing
                 </a>
-                <a className="dropdown-item" href="/babilotArt/portfolio/painting">
+                <a className="dropdown-item" href = "/portfolio/painting">
                   Painting
                 </a>
-                <a className="dropdown-item" href="/babilotArt/portfolio/photography">
+                <a className="dropdown-item" href ="/portfolio/photography">
                   Photography
                 </a>
               </div>
@@ -83,7 +75,7 @@ const Navbar = () => {
               <div
                 className="nav-link"
                 href="#"
-                onClick={() => navigate("/babilotArt/resume")}
+                onClick={() => navigate("/resume")}
               >
                 <span className="nav-text">Resume</span>{" "}
                 <span className="sr-only">(current)</span>
@@ -120,7 +112,7 @@ const Navbar = () => {
               <div
                 className="nav-link"
                 href="#"
-                onClick={() => navigate("/babilotArt/contact")}
+                onClick={() => navigate("/contact")}
               >
                 <span className="nav-text">Contact</span>{" "}
                 <span className="sr-only">(current)</span>
