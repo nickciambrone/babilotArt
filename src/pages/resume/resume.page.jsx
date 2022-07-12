@@ -14,6 +14,9 @@ const Resume = () => {
         justifyContent:'center'
       }}
     >
+    <a download="babilotResume.jpg" href="/path/to/image" title="ImageName">
+    <img alt="ImageName" src="/path/to/image" />
+</a>
     <img src={resume2} width="100%" />
 
       <img src={resume} width="100%" />

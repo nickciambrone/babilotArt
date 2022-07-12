@@ -46,7 +46,7 @@ class Portfolio extends React.Component {
                     id="1"
                     className="portfolio-image"
                     width="80%"
-                    style={{ marginLeft: "10%" }}
+                    style={{ marginLeft: "10%", cursor:'pointer' }}
                     src={brunch}
                   />
                 </div>
@@ -58,7 +58,7 @@ class Portfolio extends React.Component {
                     id="2"
                     className="portfolio-image"
                     width="80%"
-                    style={{ marginLeft: "10%" }}
+                    style={{ marginLeft: "10%", cursor:'pointer' }}
                     src={cake}
                   />
                 </div>
@@ -70,7 +70,7 @@ class Portfolio extends React.Component {
                     id="3"
                     className="portfolio-image"
                     width="80%"
-                    style={{ marginLeft: "10%" }}
+                    style={{ marginLeft: "10%", cursor:'pointer' }}
                     src={kushcake}
                   />
                 </div>
@@ -85,9 +85,6 @@ class Portfolio extends React.Component {
               >
                 <div className="drawing portfolio-item">
                   <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "4", imgPaths: [""] })
-                    }
                     id="4"
                     className="portfolio-image"
                     width="80%"
@@ -97,9 +94,6 @@ class Portfolio extends React.Component {
                 </div>
                 <div className="drawing portfolio-item">
                   <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "5", imgPaths: [""] })
-                    }
                     id="5"
                     className="portfolio-image"
                     width="80%"
@@ -109,9 +103,6 @@ class Portfolio extends React.Component {
                 </div>
                 <div className="drawing portfolio-item">
                   <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "6", imgPaths: [""] })
-                    }
                     id="6"
                     className="portfolio-image"
                     width="80%"
@@ -130,9 +121,6 @@ class Portfolio extends React.Component {
               >
                 <div className="painting portfolio-item">
                   <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "7", imgPaths: [""] })
-                    }
                     id="7"
                     className="portfolio-image"
                     width="80%"
@@ -142,9 +130,6 @@ class Portfolio extends React.Component {
                 </div>
                 <div className="painting portfolio-item">
                   <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "8", imgPaths: [""] })
-                    }
                     id="8"
                     className="portfolio-image"
                     width="80%"
@@ -154,9 +139,6 @@ class Portfolio extends React.Component {
                 </div>
                 <div className="painting portfolio-item">
                   <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "9", imgPaths: [""] })
-                    }
                     id="9"
                     className="portfolio-image"
                     width="80%"
@@ -175,9 +157,6 @@ class Portfolio extends React.Component {
               >
                 <div className="photography portfolio-item">
                   <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "1", imgPaths: [""] })
-                    }
                     id="10"
                     className="portfolio-image"
                     width="80%"
@@ -187,9 +166,6 @@ class Portfolio extends React.Component {
                 </div>
                 <div className="photography portfolio-item">
                   <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "1", imgPaths: [""] })
-                    }
                     id="11"
                     className="portfolio-image"
                     width="80%"
@@ -199,9 +175,6 @@ class Portfolio extends React.Component {
                 </div>
                 <div className="photography portfolio-item">
                   <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "1", imgPaths: [""] })
-                    }
                     id="12"
                     className="portfolio-image"
                     width="80%"

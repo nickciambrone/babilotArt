@@ -16,6 +16,7 @@ function App() {
         <Logo />
         <Navbar />
       </div>
+      <div style={{backgroundColor:'#cadfe1'}}>
       <div style = {{marginLeft:'6%', width:'88%', paddingBottom:'80px', paddingTop:'20px'}}>
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -24,6 +25,7 @@ function App() {
         <Route path={`/portfolio/:category`} element={<Portfolio />}></Route>
         <Route path="/resume" element={<Resume />}></Route>
       </Routes>
+      </div>
     </div>
     </div>
   );
