@@ -20,7 +20,7 @@ function App() {
       <div style = {{marginLeft:'6%', width:'88%', paddingBottom:'80px', paddingTop:'20px'}}>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/shop" element={<Shop />}></Route>
+        <Route path="/shop/:category" element={<Shop />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path={`/portfolio/:category`} element={<Portfolio />}></Route>
         <Route path="/resume" element={<Resume />}></Route>

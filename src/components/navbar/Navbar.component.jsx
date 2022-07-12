@@ -94,16 +94,16 @@ const Navbar = () => {
                 <span className="nav-text"> Shop</span>
               </div>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/shop/prints">
                   Prints
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/shop/paintings">
                   Paintings
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/shop/other_stuff">
                   Other Stuff
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/shop/all">
                   All
                 </a>
               </div>
