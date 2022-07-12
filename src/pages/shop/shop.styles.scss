@@ -1,0 +1,30 @@
+.buy-it-button{
+    cursor: pointer;
+    padding:4px 12px
+}
+.item-info{
+    text-align: center;
+    width:100%;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+
+.shop{
+    display:flex;
+    flex-direction: column;
+}
+
+}
+@media (min-width: 767px) {
+
+    .shop{
+        display:flex;
+        flex-direction: row;
+    }
+    .shop-item-container{
+        width:23%;
+        margin-right:2%
+    }
+    
+    }
