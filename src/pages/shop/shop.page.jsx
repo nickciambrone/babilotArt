@@ -21,6 +21,8 @@ const Shop = () => {
           quantity: 1,
         },
       ],
+      shippingAddressCollection:  { allowedCountries: ['US', 'CA'],}
+    ,
       mode: "payment",
       cancelUrl: window.location.origin,
       successUrl: "https://quiet-chaja-d2e83e.netlify.app/",
