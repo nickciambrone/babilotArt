@@ -11,8 +11,8 @@ const Navbar = () => {
     // </div>
     <div>
       <nav
-        className="navbar navbar-expand-lg navbar-light"
-        style={{ backgroundColor: "#cadfe1" }}
+        className="navbar navbar-expand-lg navbar-dark"
+        style={{ backgroundColor: "#2b757f", color:'#f1e9da' }}
       >
         <button
           className="navbar-toggler"

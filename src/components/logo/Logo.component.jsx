@@ -5,7 +5,7 @@ import "./Logo.styles.scss";
 const Logo = ({history}) => {
 
   return (
-    <div className="logo">
+    <div className="logo" style={{backgroundColor:'#f1e9da'}}>
       <img src={logo} className="logo-graphic" style={{cursor:'pointer'}} onClick = {()=>history.push('/home')}/>
       <h1
         style={{
@@ -16,7 +16,7 @@ const Logo = ({history}) => {
         className = 'logo-intro'
       >
         <span>Callie Babilot</span>
-        <span style={{ fontFamily: "Playball, cursive" }}>
+        <span style={{ fontFamily: "Comfortaa, cursive" }}>
           Graphic Designer
         </span>
       </h1>

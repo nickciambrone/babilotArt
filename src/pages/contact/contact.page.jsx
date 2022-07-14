@@ -51,11 +51,11 @@ const Contact = () => {
   return (
     <div className ='contact'>
       <div className="contact-main" style = {{display:'flex', flexDirection:'column', textAlign:'left'}}>
-      <h1 style={{fontFamily: "Playball, cursive", textAlign:'center'}}>Contact Me</h1>
-      <h5 style={{fontFamily: "Oxygen", textAlign:'left'}}>If you can any questions, comments, or concerns, please reach out! Or even if you’d just like to chat!
+      <h1 style={{fontFamily: "Comfortaa, cursive", textAlign:'center'}}>Contact Me</h1>
+      <h5 style={{fontFamily: "Comfortaa", textAlign:'left'}}>If you can any questions, comments, or concerns, please reach out! Or even if you’d just like to chat!
 
       </h5>
-      <h6 style={{fontFamily: "Oxygen", textAlign:'left'}}>Let's make some art 🙂</h6>
+      <h6 style={{fontFamily: "Comfortaa", textAlign:'left'}}>Let's make some art 🙂</h6>
       <span style={{fontWeight:'bold'}}>Name<span style={{color:'red'}}>*</span></span>
         <input
           className="contactField"
@@ -82,7 +82,7 @@ const Contact = () => {
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
         
-        <button className="contactField" onClick={submit} style={{backgroundColor:'#eeeeee', fontFamily:'Oxygen', width:'140px', padding:'10px'}}>
+        <button className="contactField" onClick={submit} style={{backgroundColor:'#eeeeee', fontFamily:'Comfortaa', width:'140px', padding:'10px'}}>
           Send Message
         </button>
         <span className={emailSent ? "visible" : null}>

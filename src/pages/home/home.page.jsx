@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-main">
-        <h1 style={{ fontFamily: "Playball, cursive" }}>HOME</h1>
+        <h1 style={{ fontFamily: "Comfortaa, cursive" }}>HOME</h1>
         <div
           className="headshots"
           style={{ display: "flex", flexDirection: "row" }}
@@ -22,10 +22,10 @@ const Home = () => {
             src="https://i0.wp.com/calliebabilot.com/wp-content/uploads/2020/12/IMG_5267.jpg?fit=300%2C300&ssl=1"
           />
         </div>
-        <h1 style={{ fontFamily: "Playball, cursive", textAlign: "left" }}>
+        <h1 style={{ fontFamily: "Comfortaa, cursive", textAlign: "left" }}>
           A few things about me...
         </h1>
-        <div style={{ textAlign: "left", fontFamily: "Oxygen" }}>
+        <div style={{ textAlign: "left", fontFamily: "Comfortaa" }}>
           <p>
             My name is Callie Babilot and I am a 22 year old graphic designer
             based in Paramus, NJ. From a very young age, I became obsessed with
@@ -70,10 +70,10 @@ const Home = () => {
           />
         </div>
         <div className="accomplishments">
-          <h1 style={{ fontFamily: "Playball, cursive", textAlign: "left" }}>
+          <h1 style={{ fontFamily: "Comfortaa, cursive", textAlign: "left" }}>
             Some of my accomplishments include…
           </h1>
-          <ul style = {{textAlign:'left' , fontFamily: "Oxygen" }}>
+          <ul style = {{textAlign:'left' , fontFamily: "Comfortaa" }}>
             <li style={{lineHeight:'30px'}}>Custom Commissions and Selling Artwork (2018-present)</li> 
             <li style={{lineHeight:'30px'}}>Received National Art Honors Society Scholarship and Award (2017) </li>
             <li style={{lineHeight:'30px'}}>Special Recognition for Artwork at Bergen Community College Arts Festival (2016-2017) </li>
@@ -83,7 +83,7 @@ const Home = () => {
       </div>
       <div
         className="home-inspiration"
-        style={{ fontFamily: "Oxygen", textAlign: "left" }}
+        style={{ fontFamily: "Comfortaa", textAlign: "left" }}
       >
         <h4>- MY INSPIRATION</h4>
         <div>

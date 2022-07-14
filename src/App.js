@@ -12,21 +12,43 @@ import Resume from "./pages/resume/resume.page";
 function App() {
   return (
     <div className="App">
-      <div className="nav-and-logo" style={{display:'flex'}}>
+      <div className="nav-and-logo" style={{ display: "flex" }}>
         <Logo />
         <Navbar />
       </div>
-      <div style={{backgroundColor:'#cadfe1'}}>
-      <div style = {{marginLeft:'6%', width:'88%', paddingBottom:'80px', paddingTop:'20px'}}>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/shop/:category" element={<Shop />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path={`/portfolio/:category`} element={<Portfolio />}></Route>
-        <Route path="/resume" element={<Resume />}></Route>
-      </Routes>
+      <div style={{ backgroundColor: "#f1e9da" }}>
+        <div
+          style={{
+            marginLeft: "6%",
+            width: "88%",
+            paddingBottom: "80px",
+            paddingTop: "20px",
+          }}
+        >
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/shop/:category" element={<Shop />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route
+              path={`/portfolio/:category`}
+              element={<Portfolio />}
+            ></Route>
+            <Route path="/resume" element={<Resume />}></Route>
+          </Routes>
+        </div>
       </div>
-    </div>
+      <div
+        style={{
+          backgroundColor: "#fba918",
+          color: "black",
+          fontWeight: "300",
+          fontSize: "10px",
+          fontFamily: "Comfortaa",
+          padding:'12px 0'
+        }}
+      >
+        Built by Nick Ciambrone
+      </div>
     </div>
   );
 }
