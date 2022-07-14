@@ -16,7 +16,7 @@ function App() {
         <Logo />
         <Navbar />
       </div>
-      <div style={{ backgroundColor: "#f1e9da" }}>
+      <div style={{ backgroundColor: "#f1e9da", minHeight:'75vh' }}>
         <div
           style={{
             marginLeft: "6%",
