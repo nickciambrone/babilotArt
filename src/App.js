@@ -47,7 +47,7 @@ function App() {
           padding:'12px 0'
         }}
       >
-        Built by Nick Ciambrone
+        Built by <a href='https://www.ciambronesolutions.com' target='_BLANK'>Ciambrone Solutions</a>
       </div>
     </div>
   );
