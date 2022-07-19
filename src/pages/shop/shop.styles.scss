@@ -21,8 +21,17 @@
     width:100%;
     font-weight: bold;
 }
+.shop-item-container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    padding:6px
+
+}
 
 @media (max-width: 767px) {
+    .shop-item-container{
+        margin-bottom:5px;
+        }
     .payment-text{
         font-size: 12px;
     }
