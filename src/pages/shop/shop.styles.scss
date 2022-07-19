@@ -1,9 +1,20 @@
 .add-to-cart{
+}
+.shop-items{
+    flex-wrap: wrap;
+}
+.buy-now{
+    background-color: #ea4e0b;
+    color:white;
+    font-weight: bolder;
     cursor: pointer;
-    padding:4px 12px;
+    width:50%;
+    margin-left:25%;
     border:none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:5px;
     border-radius: 4px;
-    background-color: #f1e9da;
+    
 }
 .item-info{
     text-align: center;

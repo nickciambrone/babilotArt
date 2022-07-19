@@ -71,7 +71,7 @@ const Navbar = () => {
                 </a>
               </div>
             </li>
-            <li className="nav-item active">
+        {    /*<li className="nav-item active">
               <div
                 className="nav-link"
                 href="#"
@@ -80,7 +80,7 @@ const Navbar = () => {
                 <span className="nav-text">Resume</span>{" "}
                 <span className="sr-only">(current)</span>
               </div>
-            </li>
+  </li>*/}
             <li className="nav-item dropdown">
               <div
                 className="nav-link dropdown-toggle"

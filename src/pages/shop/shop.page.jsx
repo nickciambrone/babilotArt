@@ -37,11 +37,14 @@ const Shop = () => {
     setLoading(true);
     const counts = {};
 
-    for (var i=0; i<priceId.length; i++) {
+    for (var i = 0; i < priceId.length; i++) {
       counts[priceId[i]] = counts[priceId[i]] ? counts[priceId[i]] + 1 : 1;
     }
 
-    var lineItems = Object.keys(counts).map(ele=> ({price:ele, quantity:counts[ele]}))
+    var lineItems = Object.keys(counts).map((ele) => ({
+      price: ele,
+      quantity: counts[ele],
+    }));
     const stripe = await stripePromise;
     const { error } = await stripe.redirectToCheckout({
       lineItems: lineItems,
@@ -86,37 +89,46 @@ const Shop = () => {
                       fontSize: "18px",
                     }}
                   >
-                    <button
+                    <div
                       role="link"
-                      onClick={() =>
-                        setPriceId(removeFirst(elem.priceId, priceId))
-                      }
                       disabled={loading}
                       className="add-to-cart"
                       style={{ width: "25%" }}
                     >
-                      <img src={minus} />
-                    </button>
-                    <span style={{ padding: "4px" }}>
+                      <img
+                        src={minus}
+                        style={{ cursor: "pointer" }}
+                        width='30px'
+                        onClick={() =>
+                          setPriceId(removeFirst(elem.priceId, priceId))
+                        }
+                      />
+                    </div>
+                    <span >
                       {priceId.filter((ele) => ele === elem.priceId).length}
                     </span>
-                    <button
+                    <div
                       role="link"
-                      onClick={() => {
-                        setPriceId([...priceId, elem.priceId]);
-                      }}
                       disabled={loading}
                       className="add-to-cart"
                       style={{ width: "25%" }}
                     >
-                      <img src={plus} />
-                    </button>
+                      <img
+                        src={plus}
+                        width='30px'
+
+                        style={{ cursor: "pointer" }}
+                        onClick={() => {
+                          setPriceId([...priceId, elem.priceId]);
+                        }}
+                      />
+                    </div>
                   </div>
                   <button
                     role="link"
                     onClick={() => checkout([elem.priceId])}
                     disabled={loading}
-                    className="add-to-cart"
+                    className="buy-now"
                   >
                     Buy Now
                   </button>
