@@ -63,7 +63,7 @@ const Shop = () => {
   return (
     <div className="shop">
       <div className="shop-shop">
-        <div style={{display:'flex', flexDirection:'column'}}>
+        <div style={{display:'flex', flexDirection:'column'}} className = 'left-shop-container'>
           <div className="shop-items" style={{marginBottom:'20px'}}>
             {Object.keys(SHOP_DATA).map((ele) =>
               SHOP_DATA[ele].map((elem, ind) =>
@@ -143,9 +143,12 @@ const Shop = () => {
               )
             )}
           </div>
-          <div className="see-all" onClick={() => setAll(true)}>
-            See All Results
-          </div>
+          {!all ?    <span className="see-all" style={{cursor:'pointer', width:'140px', margin:'auto'}} onClick={() => setAll(true)}>
+          See All Results
+        </span> :<span className="see-all" style={{cursor:'pointer', width:'140px', margin:'auto'}} onClick={() => setAll(false)}>
+        See Less Results
+      </span>}
+       
         </div>
         <div className="checkout-side">
           <div
