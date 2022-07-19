@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { SHOP_DATA } from "./shop.data";
 import "./shop.styles.scss";
@@ -14,8 +14,19 @@ const Shop = () => {
   console.log(category);
   const [stripeError, setStripeError] = useState();
   const [loading, setLoading] = useState();
-  const [priceId, setPriceId] = useState([]);
   const [all, setAll] = useState(false);
+  const [priceId, setPriceId] = useState(
+    () =>
+      JSON.parse(localStorage.getItem("priceId")) || [
+      ]
+  );
+
+  useEffect(() => {
+    window.localStorage.setItem('priceId', JSON.stringify(priceId));
+  }, [priceId]);
+
+
+
 
   console.log(priceId);
   const removeFirst = (item, items) => {
