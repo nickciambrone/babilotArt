@@ -1,5 +1,5 @@
 import React from "react";
-import { useState , useEffect} from "react";
+import { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { SHOP_DATA } from "./shop.data";
 import "./shop.styles.scss";
@@ -7,7 +7,7 @@ import shop from "./shop.png";
 import plus from "./plus-svgrepo-com.svg";
 import minus from "./minus-svgrepo-com.svg";
 
-const stripePromise = loadStripe("pk_test_QXna0K3iXrl6r7idSGw4i12b00Lzlybu6b");
+const stripePromise = loadStripe("pk_live_51LNNY1LAv2ONmILvSUFTvYyIq0M7CFBlzQJWiffgJhlsJW2iU7So4O9o8buDtDFefOPPN9Z7Xlu7DhEwfZPVxrpb002uqunzDU");
 
 const Shop = () => {
   let category = window.location.pathname.split("/")[2];
@@ -16,25 +16,20 @@ const Shop = () => {
   const [loading, setLoading] = useState();
   const [all, setAll] = useState(false);
   const [priceId, setPriceId] = useState(
-    () =>
-      JSON.parse(localStorage.getItem("priceId")) || [
-      ]
+    () => JSON.parse(localStorage.getItem("priceId")) || []
   );
 
   useEffect(() => {
-    window.localStorage.setItem('priceId', JSON.stringify(priceId));
+    window.localStorage.setItem("priceId", JSON.stringify(priceId));
   }, [priceId]);
 
-
-
-
-  console.log(priceId);
+  console.log('priceId',priceId);
   const removeFirst = (item, items) => {
     let found = false;
     let newItems = [];
     for (var i = 0; i < items.length; i++) {
       if (item !== items[i]) {
-        newItems.push(item);
+        newItems.push(items[i]);
       } else {
         if (found === false) {
           found = true;
@@ -74,8 +69,11 @@ const Shop = () => {
   return (
     <div className="shop">
       <div className="shop-shop">
-        <div style={{display:'flex', flexDirection:'column'}} className = 'left-shop-container'>
-          <div className="shop-items" style={{marginBottom:'20px'}}>
+        <div
+          style={{ display: "flex", flexDirection: "column" }}
+          className="left-shop-container"
+        >
+          <div className="shop-items" style={{ marginBottom: "20px" }}>
             {Object.keys(SHOP_DATA).map((ele) =>
               SHOP_DATA[ele].map((elem, ind) =>
                 (ele === category || category === "all") &&
@@ -154,12 +152,23 @@ const Shop = () => {
               )
             )}
           </div>
-          {!all ?    <span className="see-all" style={{cursor:'pointer', width:'140px', margin:'auto'}} onClick={() => setAll(true)}>
-          See All Results
-        </span> :<span className="see-all" style={{cursor:'pointer', width:'140px', margin:'auto'}} onClick={() => setAll(false)}>
-        See Less Results
-      </span>}
-       
+          {!all ? (
+            <span
+              className="see-all"
+              style={{ cursor: "pointer", width: "140px", margin: "auto" }}
+              onClick={() => setAll(true)}
+            >
+              See All Results
+            </span>
+          ) : (
+            <span
+              className="see-all"
+              style={{ cursor: "pointer", width: "140px", margin: "auto" }}
+              onClick={() => setAll(false)}
+            >
+              See Less Results
+            </span>
+          )}
         </div>
         <div className="checkout-side">
           <div
