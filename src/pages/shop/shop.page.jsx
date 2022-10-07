@@ -79,7 +79,7 @@ const Shop = () => {
             {Object.keys(SHOP_DATA).map((ele) =>
               SHOP_DATA[ele].map((elem, ind) =>
                 (ele === category || category === "all") &&
-                (all === true || ind < 8) ? (
+                (all === true || ind < 4) ? (
                   <div
                     className="shop-item-container"
                     style={{ display: "flex", flexDirection: "column", width:'230px' }}
