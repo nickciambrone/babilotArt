@@ -1,5 +1,24 @@
 .add-to-cart{
 }
+
+.img-and-btn{
+    .buy-now{
+        opacity:0%
+
+    }
+    &:hover{
+        .buy-now{
+            opacity:100%
+
+        }
+    }
+}
+.dont-trip{
+    width:420px
+}
+.not-trip{
+    width:220px
+}
 .payment-text{
     font-size: 12px;
 }
@@ -9,17 +28,24 @@
 .shop-items{
     flex-wrap: wrap;
 }
+.not-trip-btn{
+    width:120px;
+    margin-left:50px
+}
+.dont-trip-btn{
+    width:120px;
+    margin-left:150px
+}
 .buy-now{
     background-color: #ea4e0b;
     color:white;
     font-weight: bolder;
     cursor: pointer;
-    width:50%;
-    margin-left:25%;
     border:none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding:5px;
+    padding:8px 16px;
     border-radius: 4px;
+
     
 }
 .item-info{
@@ -28,8 +54,8 @@
     font-weight: bold;
 }
 .shop-item-container{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 5px;
     padding:6px;
     display:flex;
     justify-content: center;
@@ -61,7 +87,7 @@
         width:35%
     }
     .left-shop-container{
-        width:65%
+        width:100%
     }
 
 .shop{
@@ -73,7 +99,7 @@
 }
 @media (min-width: 767px) {
     .left-shop-container{
-        width:80%
+        width:100%
     }
     .checkout-area{
         width:85px;
@@ -89,7 +115,7 @@
         width:100%
     }
     .checkout-side{
-        width:20%
+        width:10%
     }
 
     .shop{
@@ -101,7 +127,6 @@
         flex-direction: row;
     }
     .shop-item-container{
-        width:23%;
         margin-right:2%
     }
     

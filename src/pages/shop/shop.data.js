@@ -373,15 +373,7 @@ export const SHOP_DATA = {
     },
   ],
   paintings: [
-    {
-      name: "taco",
-      title: "Dont Trip",
-      imgUrl: "/donttrip.jpg",
-      price: 300,
-      description: "Acrylic and oil painting on stretched canvas",
-      size: "18x24",
-      priceId: "price_1LnXa4LAv2ONmILvwOaQ3ZL5",
-    },
+    
     {
       name: "cake",
       title: "Lucky",
@@ -418,6 +410,14 @@ export const SHOP_DATA = {
       description: "Acrylic painting on canvas",
       size: "18x24”",
       priceId: "price_1LnXehLAv2ONmILvWjue0CW8",
+    },{
+      name: "taco",
+      title: "Dont Trip",
+      imgUrl: "/donttrip.jpg",
+      price: 300,
+      description: "Acrylic and oil painting on stretched canvas",
+      size: "18x24",
+      priceId: "price_1LnXa4LAv2ONmILvwOaQ3ZL5",
     },
   ],
 };

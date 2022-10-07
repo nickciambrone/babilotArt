@@ -7,7 +7,9 @@ import shop from "./shop.png";
 import plus from "./plus-svgrepo-com.svg";
 import minus from "./minus-svgrepo-com.svg";
 
-const stripePromise = loadStripe("pk_live_51LNNY1LAv2ONmILvSUFTvYyIq0M7CFBlzQJWiffgJhlsJW2iU7So4O9o8buDtDFefOPPN9Z7Xlu7DhEwfZPVxrpb002uqunzDU");
+const stripePromise = loadStripe(
+  "pk_live_51LNNY1LAv2ONmILvSUFTvYyIq0M7CFBlzQJWiffgJhlsJW2iU7So4O9o8buDtDFefOPPN9Z7Xlu7DhEwfZPVxrpb002uqunzDU"
+);
 
 const Shop = () => {
   let category = window.location.pathname.split("/")[2];
@@ -23,7 +25,7 @@ const Shop = () => {
     window.localStorage.setItem("priceId", JSON.stringify(priceId));
   }, [priceId]);
 
-  console.log('priceId',priceId);
+  console.log("priceId", priceId);
   const removeFirst = (item, items) => {
     let found = false;
     let newItems = [];
@@ -80,16 +82,29 @@ const Shop = () => {
                 (all === true || ind < 8) ? (
                   <div
                     className="shop-item-container"
-                    style={{ display: "flex", flexDirection: "column" }}
+                    style={{ display: "flex", flexDirection: "column", width:'230px' }}
                   >
-                    <img
-                      style={{ width: "100%" }}
-                      src={"/images" + elem.imgUrl}
-                    />
+                    {" "}
                     <div className="shop-item-info">
-                      <div className="item-info">
+                      <div className="item-info" style={{fontSize:'12px'}}>
                         {elem.title} / ${elem.price}
                       </div>
+                    </div>
+                    <div className = 'img-and-btn' style={{ position:'relative', height:'300px'}}>
+                      <img
+                        className = {`art-image ${elem.imgUrl == '/donttrip.jpg' ? 'dont-trip' :'not-trip'}`}
+                        style={{ height: "300px", position:'absolute', top:'0', left:'0' }}
+                        src={"/images" + elem.imgUrl}
+                      />
+                      <button
+                        role="link"
+                        onClick={() => checkout([elem.priceId])}
+                        disabled={loading}
+                        className={`buy-now ${elem.imgUrl == '/donttrip.jpg' ? 'dont-trip-btn' :'not-trip-btn'}`}
+                        style={{zIndex:'3', bottom:'5px',left:'0', position:'absolute'}}
+                      >
+                        Buy Now
+                      </button>
                     </div>
                     {stripeError && (
                       <p style={{ color: "red" }}>{stripeError}</p>
@@ -99,7 +114,6 @@ const Shop = () => {
                         display: "flex",
                         flexDirection: "row",
                         justifyContent: "space-evenly",
-                        marginBottom: "5px",
                         fontSize: "18px",
                       }}
                     >
@@ -137,14 +151,6 @@ const Shop = () => {
                         />
                       </div>
                     </div>
-                    <button
-                      role="link"
-                      onClick={() => checkout([elem.priceId])}
-                      disabled={loading}
-                      className="buy-now"
-                    >
-                      Buy Now
-                    </button>
                   </div>
                 ) : (
                   ""
@@ -158,7 +164,7 @@ const Shop = () => {
               style={{ cursor: "pointer", width: "140px", margin: "auto" }}
               onClick={() => setAll(true)}
             >
-              See All Results
+              See More
             </span>
           ) : (
             <span
@@ -166,32 +172,32 @@ const Shop = () => {
               style={{ cursor: "pointer", width: "140px", margin: "auto" }}
               onClick={() => setAll(false)}
             >
-              See Less Results
+              See Less 
             </span>
           )}
         </div>
-        <div className="checkout-side">
+       <div className="checkout-side" >
           <div
             className="checkout-area"
             style={{
               display: "flex",
               flexDirection: "column",
               textAlign: "center",
-              margin: "auto",
+              margin: "auto"
             }}
             onClick={() => checkout(priceId)}
           >
             <img src={shop} style={{ cursor: "pointer" }} width="40px" />
             <span style={{ fontSize: "11px" }}>Proceed to Checkout </span>
           </div>
-          <div style={{ padding: "16px 0 0 10px" }} className="payment-text">
-            Your payment info is not stored anywhere. The transaction is through{" "}
-            <a href="https://www.stripe.com" target="_BLANK">
-              Stripe
+          <div style={{ padding: "14px 0 0 10px", fontSize:'10px' }} className="payment-text">
+          Payments are through {" "}
+          <a href="https://www.stripe.com" target="_BLANK">
+               Stripe
             </a>
-            , a secure payment service.
+            , a secure 3rd party payment service.
           </div>
-        </div>
+          </div>
       </div>
     </div>
   );

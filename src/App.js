@@ -37,18 +37,7 @@ function App() {
           </Routes>
         </div>
       </div>
-      <div
-        style={{
-          backgroundColor: "#fba918",
-          color: "black",
-          fontWeight: "300",
-          fontSize: "10px",
-          fontFamily: "Comfortaa",
-          padding:'12px 0'
-        }}
-      >
-        Built by <a href='https://www.ciambronesolutions.com' target='_BLANK'>Ciambrone Solutions</a>
-      </div>
+
     </div>
   );
 }
