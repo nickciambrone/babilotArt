@@ -4,12 +4,12 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-main">
-        <h1 style={{ fontFamily: "Comfortaa, cursive" }}>HOME</h1>
-        <div
+{  /*      <h1 style={{ fontFamily: "Comfortaa, cursive" }}>HOME</h1> */
+}        <div
           className="headshots"
           style={{ display: "flex", flexDirection: "row" }}
         >
-          <img
+{      /*    <img
             width="33%"
             src="https://i0.wp.com/calliebabilot.com/wp-content/uploads/2020/12/IMG_5269.jpg?fit=300%2C300&ssl=1"
           />
@@ -20,7 +20,7 @@ const Home = () => {
           <img
             width="33%"
             src="https://i0.wp.com/calliebabilot.com/wp-content/uploads/2020/12/IMG_5267.jpg?fit=300%2C300&ssl=1"
-          />
+  /> */}
         </div>
         <h1 style={{ fontFamily: "Comfortaa, cursive", textAlign: "left" }}>
           A few things about me...
@@ -56,7 +56,7 @@ const Home = () => {
             justifyContent: "space-evenly",
           }}
         >
-          <img
+      {  /*  <img
             width="33%"
             src="https://i0.wp.com/calliebabilot.com/wp-content/uploads/2020/12/IMG_5274.jpg?rfit=300%2C300ssl=1"
           />
@@ -67,7 +67,7 @@ const Home = () => {
           <img
             width="33%"
             src="https://i0.wp.com/calliebabilot.com/wp-content/uploads/2020/12/IMG_5275.jpg?fit=300%2C300&ssl=1"
-          />
+        />*/}
         </div>
         <div className="accomplishments">
           <h1 style={{ fontFamily: "Comfortaa, cursive", textAlign: "left" }}>
