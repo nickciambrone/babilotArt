@@ -87,7 +87,7 @@ const Shop = () => {
                     {" "}
                     <div className="shop-item-info">
                       <div className="item-info" style={{fontSize:'12px'}}>
-                        {elem.title} / ${elem.price}
+                        {elem.title} / <span style={{fontFamily:'Arial Black'}}>${elem.price}</span> 
                       </div>
                     </div>
                     <div className = 'img-and-btn' style={{ position:'relative', height:'300px'}}>
