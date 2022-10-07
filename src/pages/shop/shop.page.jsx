@@ -81,8 +81,8 @@ const Shop = () => {
                 (ele === category || category === "all") &&
                 (all === true || ind < 4) ? (
                   <div
-                    className="shop-item-container"
-                    style={{ display: "flex", flexDirection: "column", width:'230px' }}
+                    className={`shop-item-container ${elem.imgUrl == '/donttrip.jpg' ? 'dont-trip-container' :'not-trip-container'}`}
+                    style={{ display: "flex", flexDirection: "column" }}
                   >
                     {" "}
                     <div className="shop-item-info">

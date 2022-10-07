@@ -1,6 +1,8 @@
 .add-to-cart{
 }
-
+.not-trip-container{
+    width:230px
+}
 .img-and-btn{
     .buy-now{
         opacity:0%
@@ -13,8 +15,21 @@
         }
     }
 }
-.dont-trip{
-    width:420px
+@media (max-width: 767px) {
+    .dont-trip{
+        width:220px
+    }
+    .dont-trip-container{
+        width:230px
+    }
+}
+@media (min-width: 767px) {
+    .dont-trip{
+        width:420px
+    }
+    .dont-trip-container{
+        width:430px
+    }
 }
 .not-trip{
     width:220px
