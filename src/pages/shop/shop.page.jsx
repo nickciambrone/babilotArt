@@ -60,7 +60,7 @@ const Shop = () => {
       shippingAddressCollection: { allowedCountries: ["US", "CA"] },
       mode: "payment",
       cancelUrl: window.location.origin,
-      successUrl: "https://calliebabliotart.com/shop/all",
+      successUrl: "https://calliebabilotart.com/shop/all",
     });
     if (error) {
       setLoading(false);
