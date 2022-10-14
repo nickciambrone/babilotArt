@@ -60,7 +60,7 @@ const Shop = () => {
       shippingAddressCollection: { allowedCountries: ["US", "CA"] },
       mode: "payment",
       cancelUrl: window.location.origin,
-      successUrl: "https://quiet-chaja-d2e83e.netlify.app/",
+      successUrl: "https://calliebabliotart.com/shop/all",
     });
     if (error) {
       setLoading(false);
