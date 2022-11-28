@@ -90,10 +90,9 @@ const Shop = () => {
                         {elem.title} / <span style={{fontFamily:'Arial Black'}}>${elem.price}</span> 
                       </div>
                     </div>
-                    <div className = 'img-and-btn' style={{ position:'relative', height:'300px'}}>
+                    <div className = 'img-and-btn' style={{ position:'relative'}}>
                       <img
                         className = {`art-image ${elem.imgUrl == '/donttrip.jpg' ? 'dont-trip' :'not-trip'}`}
-                        style={{ height: "300px", position:'absolute', top:'0', left:'0' }}
                         src={"/images" + elem.imgUrl}
                       />
                       <button
