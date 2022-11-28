@@ -92,14 +92,14 @@ const Shop = () => {
                     </div>
                     <div className = 'img-and-btn' style={{ position:'relative'}}>
                       <img
-                        className = {`art-image ${elem.imgUrl == '/donttrip.jpg' ? 'dont-trip' :'not-trip'}`}
+                        className = 'not-trip'
                         src={"/images" + elem.imgUrl}
                       />
                       <button
                         role="link"
                         onClick={() => checkout([elem.priceId])}
                         disabled={loading}
-                        className={`buy-now ${elem.imgUrl == '/donttrip.jpg' ? 'dont-trip-btn' :'not-trip-btn'}`}
+                        className='buy-now not-trip-btn'
                         style={{zIndex:'3', bottom:'5px',left:'0', position:'absolute'}}
                       >
                         Buy Now
