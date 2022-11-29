@@ -55,15 +55,7 @@ export const SHOP_DATA = {
       size: "8x8”",
       priceId: "price_1Lbu1QLAv2ONmILv62HtV6Sh",
     },
-    {
-      name: "cake",
-      title: "Never Been Better Pt. 1",
-      imgUrl: "/digitalprint7.png",
-      price: 20,
-      description: "One of my favorite sayings in my favorite color scheme",
-      size: "8x8”",
-      priceId: "price_1Lbu2WLAv2ONmILvRq3W3zYH",
-    },
+  
     {
       name: "brunch",
       title: "It Is What It Is",
@@ -192,15 +184,7 @@ export const SHOP_DATA = {
       size: "8x8”",
       priceId: "price_1LbuENLAv2ONmILv8zQrh7PA",
     },
-    {
-      name: "taco",
-      title: "118",
-      imgUrl: "/118.png",
-      price: 25,
-      description: "Digital photograph print taken in Santa Monica",
-      size: "8x12”",
-      priceId: "price_1LcaxwLAv2ONmILvARLNkb0g",
-    },
+ 
     {
       name: "cake",
       title: "Abandoned",
@@ -210,15 +194,7 @@ export const SHOP_DATA = {
       size: "8x12”",
       priceId: "price_1Lcb0tLAv2ONmILvkRAwHl8c",
     },
-    {
-      name: "taco",
-      title: "Adidas",
-      imgUrl: "/adidas.jpg",
-      price: 25,
-      description: "Digital photograph print of some fresh kicks",
-      size: "8x12”",
-      priceId: "price_1LcbBOLAv2ONmILvXFK35nQe",
-    },
+  
     {
       name: "cake",
       title: "Beach",
@@ -229,33 +205,8 @@ export const SHOP_DATA = {
       size: "8x12”",
       priceId: "price_1LcbCQLAv2ONmILvq5SvWbpQ",
     },
-    {
-      name: "taco",
-      title: "Boardwalk",
-      imgUrl: "/boardwalk.png",
-      price: 25,
-      description: "Film photograph print of a store front sign in Ocean City",
-      size: "8x12”",
-      priceId: "price_1LcbDwLAv2ONmILvQglnspLI",
-    },
-    {
-      name: "cake",
-      title: "Books",
-      imgUrl: "/books.png",
-      price: 25,
-      description: "Film photograph print taken of a book store in Tampa",
-      size: "8x12”",
-      priceId: "price_1LcbEjLAv2ONmILvjn3aY74q",
-    },
-    {
-      name: "taco",
-      title: "Cigarettes",
-      imgUrl: "/cigarettes.png",
-      price: 25,
-      description: "Film photograph print taken inside an abandoned mansion",
-      size: "8x12”",
-      priceId: "price_1LcbFaLAv2ONmILvEOwDbyIr",
-    },
+
+  
     {
       name: "cake",
       title: "Corner",
@@ -274,44 +225,7 @@ export const SHOP_DATA = {
       size: "8x12”",
       priceId: "price_1LcbHgLAv2ONmILv5o8qoY6y",
     },
-    {
-      name: "taco",
-      title: "Disco Ball",
-      imgUrl: "/discoball.png",
-      price: 25,
-      description:
-        "Film photograph print taken from the inside of a disco themed night club",
-      size: "8x12”",
-      priceId: "price_1LcbIgLAv2ONmILvR77d2jmL",
-    },
-    {
-      name: "cake",
-      title: "Hollywood",
-      imgUrl: "/hollywood.png",
-      price: 25,
-      description:
-        "Film photograph print taken of a vintage police car on Rodeo Drive",
-      size: "8x12”",
-      priceId: "price_1LcbNoLAv2ONmILvTGEqlYpo",
-    },
-    {
-      name: "cake",
-      title: "Painter",
-      imgUrl: "/painter.jpg",
-      price: 25,
-      description: "Digital photograph taken at a rest stop in Virginia",
-      size: "8x12”",
-      priceId: "price_1LcbOwLAv2ONmILvdh58yjnd",
-    },
-    {
-      name: "taco",
-      title: "Pirate Ship",
-      imgUrl: "/pirateship.png",
-      price: 25,
-      description: "Film photograph print taken off the west coast of Florida",
-      size: "8x12”",
-      priceId: "price_1LcbPsLAv2ONmILvBcENVlBU",
-    },
+
     {
       name: "cake",
       title: "Playing Games",
@@ -322,16 +236,7 @@ export const SHOP_DATA = {
       size: "8x12”",
       priceId: "price_1LcbQwLAv2ONmILvmUv2gei7",
     },
-    {
-      name: "taco",
-      title: "Santa Monica Pier",
-      imgUrl: "/santamonica.png",
-      price: 25,
-      description:
-        "Film photograph print taken off the edge of Santa Monica Pier",
-      size: "8x12”",
-      priceId: "price_1LcbShLAv2ONmILv4HXSpVhQ",
-    },
+  
     {
       name: "cake",
       title: "Swing",
@@ -363,6 +268,15 @@ export const SHOP_DATA = {
     },
     {
       name: "cake",
+      title: "Never Been Better Pt. 1",
+      imgUrl: "/digitalprint7.png",
+      price: 20,
+      description: "One of my favorite sayings in my favorite color scheme",
+      size: "8x8”",
+      priceId: "price_1Lbu2WLAv2ONmILvRq3W3zYH",
+    },
+    {
+      name: "cake",
       title: "Wildwood",
       imgUrl: "/wildwood.png",
       price: 25,
@@ -370,6 +284,102 @@ export const SHOP_DATA = {
         "Film photograph print taken on the top of the ferris wheel on the Wildwood boardwalk",
       size: "8x12”",
       priceId: "price_1LcbWoLAv2ONmILv4HG4NqXA",
+    },
+    {
+      name: "taco",
+      title: "118",
+      imgUrl: "/118.png",
+      price: 25,
+      description: "Digital photograph print taken in Santa Monica",
+      size: "8x12”",
+      priceId: "price_1LcaxwLAv2ONmILvARLNkb0g",
+    },
+    {
+      name: "taco",
+      title: "Adidas",
+      imgUrl: "/adidas.jpg",
+      price: 25,
+      description: "Digital photograph print of some fresh kicks",
+      size: "8x12”",
+      priceId: "price_1LcbBOLAv2ONmILvXFK35nQe",
+    },
+    {
+      name: "taco",
+      title: "Boardwalk",
+      imgUrl: "/boardwalk.png",
+      price: 25,
+      description: "Film photograph print of a store front sign in Ocean City",
+      size: "8x12”",
+      priceId: "price_1LcbDwLAv2ONmILvQglnspLI",
+    },
+    {
+      name: "cake",
+      title: "Books",
+      imgUrl: "/books.png",
+      price: 25,
+      description: "Film photograph print taken of a book store in Tampa",
+      size: "8x12”",
+      priceId: "price_1LcbEjLAv2ONmILvjn3aY74q",
+    },
+
+    {
+      name: "taco",
+      title: "Cigarettes",
+      imgUrl: "/cigarettes.png",
+      price: 25,
+      description: "Film photograph print taken inside an abandoned mansion",
+      size: "8x12”",
+      priceId: "price_1LcbFaLAv2ONmILvEOwDbyIr",
+    },
+    {
+      name: "taco",
+      title: "Disco Ball",
+      imgUrl: "/discoball.png",
+      price: 25,
+      description:
+        "Film photograph print taken from the inside of a disco themed night club",
+      size: "8x12”",
+      priceId: "price_1LcbIgLAv2ONmILvR77d2jmL",
+    },
+    {
+      name: "cake",
+      title: "Hollywood",
+      imgUrl: "/hollywood.png",
+      price: 25,
+      description:
+        "Film photograph print taken of a vintage police car on Rodeo Drive",
+      size: "8x12”",
+      priceId: "price_1LcbNoLAv2ONmILvTGEqlYpo",
+    },
+
+    {
+      name: "cake",
+      title: "Painter",
+      imgUrl: "/painter.jpg",
+      price: 25,
+      description: "Digital photograph taken at a rest stop in Virginia",
+      size: "8x12”",
+      priceId: "price_1LcbOwLAv2ONmILvdh58yjnd",
+    },
+
+    {
+      name: "taco",
+      title: "Pirate Ship",
+      imgUrl: "/pirateship.png",
+      price: 25,
+      description: "Film photograph print taken off the west coast of Florida",
+      size: "8x12”",
+      priceId: "price_1LcbPsLAv2ONmILvBcENVlBU",
+    },
+    {
+      name: "taco",
+      title: "Santa Monica Pier",
+      imgUrl: "/santamonica.png",
+      price: 25,
+      description:
+        "Film photograph print taken off the edge of Santa Monica Pier",
+      size: "8x12”",
+      priceId: "price_1LcbShLAv2ONmILv4HXSpVhQ",
     },
   ],
   paintings: [
