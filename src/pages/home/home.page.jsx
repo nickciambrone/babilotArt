@@ -9,44 +9,47 @@ const Home = () => {
           className="headshots"
           style={{ display: "flex", flexDirection: "row" }}
         >
-{      /*    <img
+         <img
             width="33%"
-            src="https://i0.wp.com/calliebabilot.com/wp-content/uploads/2020/12/IMG_5269.jpg?fit=300%2C300&ssl=1"
+            src="/images/IMG_8286.jpeg"
           />
           <img
             width="33%"
-            src="https://i0.wp.com/calliebabilot.com/wp-content/uploads/2020/12/IMG_5268.jpg?fit=300%2C300&ssl=1"
+            src="/images/Facetune_01-03-2022-16-03-00.jpeg"
           />
           <img
             width="33%"
-            src="https://i0.wp.com/calliebabilot.com/wp-content/uploads/2020/12/IMG_5267.jpg?fit=300%2C300&ssl=1"
-  /> */}
+            src="/images/Facetune_27-09-2020-17-38-13.jpeg"
+  /> 
         </div>
         <h1 style={{ fontFamily: "Comfortaa, cursive", textAlign: "left" }}>
-          A few things about me...
+          A few things about Callie...
         </h1>
         <div style={{ textAlign: "left", fontFamily: "Comfortaa" }}>
+      
+      
+
           <p>
-            My name is Callie Babilot and I am a 22 year old graphic designer
-            based in Paramus, NJ. From a very young age, I became obsessed with
-            creatively expressing myself through my artistic abilities. I picked
-            up hobbies including drawing, painting, illustration, and
-            photography which have happily brought me to where I am now.
+          Callie Babilot is a 23 year old fine artist and graphic designer based in Bergen
+          County, NJ. Her infatuation with creatively expressing herself through her artistic
+          abilities started at a very young age. Throughout her life, she has focused on
+          perfecting her craft with drawing, painting, photography, design, and so much
+          more.
           </p>
           <p>
-            Fast forward years later, and the flow of artistry never stopped. I
-            have now graduated from Stockton University with a Bachelor of Fine
-            Arts Degree with a concentration in Visual Communications.
+          Callie attended Stockton University and graduated with a Bachelor of Fine Arts
+          Degree with a concentration in Visual Communications. Various artistic positions
+          in clubs, organizations and internships throughout the time in her
+          undergraduate program have helped shape the imaginative and innovative
+          person she is today.
           </p>
 
           <p>
-            There is nothing I love more than being outdoors or traveling
-            somewhere outside of my usual surroundings. I tend to develop
-            inspiration for art through my environment, the people I meet, and
-            the things I love doing. Therefore, I tend to gain new perspectives
-            on life every moment that I can, thus benefitting my career and
-            passion for art.
+          Since 2020, Callie has been freelancing as a graphic designer, fine artist and
+          content creator part time. She is nothing less than a visionary who’s ambition
+          revolves around helping people bring their artistic ideas to life as well as her own.
           </p>
+          <form method="get" action="/images/calliebabilotresume.pdf" target="_blank"><button class="document" type="submit">View My Resume</button></form>
         </div>
         <div
           className="action-shots"
@@ -69,30 +72,9 @@ const Home = () => {
             src="https://i0.wp.com/calliebabilot.com/wp-content/uploads/2020/12/IMG_5275.jpg?fit=300%2C300&ssl=1"
         />*/}
         </div>
-        <div className="accomplishments">
-          <h1 style={{ fontFamily: "Comfortaa, cursive", textAlign: "left" }}>
-            Some of my accomplishments include…
-          </h1>
-          <ul style = {{textAlign:'left' , fontFamily: "Comfortaa" }}>
-            <li style={{lineHeight:'30px'}}>Custom Commissions and Selling Artwork (2018-present)</li> 
-            <li style={{lineHeight:'30px'}}>Received National Art Honors Society Scholarship and Award (2017) </li>
-            <li style={{lineHeight:'30px'}}>Special Recognition for Artwork at Bergen Community College Arts Festival (2016-2017) </li>
-            <li style={{lineHeight:'30px'}}>Painted Mural for Paramus Municipal Pool (2016)</li>
-          </ul>
-        </div>
+     
       </div>
-      <div
-        className="home-inspiration"
-        style={{ fontFamily: "Comfortaa", textAlign: "left" }}
-      >
-        <h4>- MY INSPIRATION</h4>
-        <div>
-          While growing up in a household where art was greatly appreciated, I
-          knew that I wanted to make the world a more colorful and creative
-          place. Every piece tells a story, and a snippet from my journey as an
-          artist. Come along with me as I explore my perspective of fine arts.
-        </div>
-      </div>
+ 
     </div>
   );
 };
