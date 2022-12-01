@@ -7,7 +7,7 @@ const Home = () => {
 {  /*      <h1 style={{ fontFamily: "Comfortaa, cursive" }}>HOME</h1> */
 }        <div
           className="headshots"
-          style={{ display: "flex", flexDirection: "row" }}
+          // style={{ display: "flex", flexDirection: "row" }}
         >
          <img
             width="33%"
