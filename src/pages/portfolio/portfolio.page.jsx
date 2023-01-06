@@ -1,195 +1,92 @@
 import React from "react";
-import cake from "./cake.png";
-import brunch from "./brunch.png";
-import kushcake from "./kushcake.png";
-import stillLife from "./stillLife.jpeg";
-import gabe from "./gabe.jpeg";
-import selfPortrait from "./selfPortrait.jpeg";
-import woman from "./woman.jpeg";
-import sunnyTits from "./sunnyTits.jpeg";
-import farmer from "./farmer.jpeg";
-import windowGirl from "./windowGirl.jpeg";
-import taco from "./taco.jpeg";
-import kid from "./kid.jpeg";
+
 import "./portfolio.styles.scss";
-import PortfolioItemDetails from "./portfolio-item-details/portfolio-item-details.component";
 class Portfolio extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedImage: false,
-      imgPaths: [],
+      selectedImage:false
     };
   }
   render() {
-    const setSelectedImageFalse= () =>{
-      this.setState({selectedImage:false})
-    }
-
+    const category = window.location.pathname.substring(11, window.location.pathname.length)
+    const images = {
+      'graphic-design':[
+      'sincerelysalena2.png ',
+      'njbouncers4.png ',
+      'cblandscaping3.png ',
+      'cblandscaping2.png ',
+      'sincerelysalena1.png ',
+      'cblandscaping1.png ',
+      'kushcake4.png ',
+      'njbouncers2.png ',
+      'tntfit1.png ',
+      'kushcake1.png ',
+      'njbouncers3.png ',
+      'njbouncers1.png ',
+      'kushcake3.png ',
+      'allstarpowerwashing1.png ',
+      'tntfit2.png ',
+      'kushcake2.png ',
+      'dulcecreations4.png ',
+      'dulcecreations3.png ',
+      'joellestar2.png ',
+      'joellestar3.png ',
+      'dulcecreations2.png ',
+      'joellestar1.png ',
+      'dulcecreations1.jpg ',
+      'albumcover2.JPG ',
+      'humanfitnetics3.png ',
+      'humanfitnetics2.png ',
+      'albumcover3.png ',
+      'albumcover1.png ',
+      'humanfitnetics1.png ',
+      'danielle4.png ',
+      'humanfitnetics4.png ',
+      'danielle1.jpg ',
+      'danielle3.png ',
+      'danielle2.jpg ',
+      'magicallymaid3.png ',
+      'brightside1.png ',
+      'magicallymaid2.png ',
+      'craftsman1.jpg ',
+      'craftsman3.jpg ',
+      'brightside2.png ',
+      'brightside3.png ',
+      'magicallymaid1.png ',
+      'craftsman2.png ',
+      'bakedonthebeach2.png ',
+      'craftsman6.png ',
+      'bakedonthebeach3.png ',
+      'bakedonthebeach1.png ',
+      'craftsman5.png ',
+      'brightside4.png ',
+      'craftsman4.png ',
+    ]}
+    console.log(category)
+    console.log(this.state.selectedImage)
     return (
       <div className="portfolio">
-        {!this.state.selectedImage ? (
-          <div className="portfolio-full">
-            {window.location.pathname === "/portfolio/graphic-design" ? (
-              <div
-                className="graphic-design-section portfolio-section"
-                style={{ display: "flex" }}
-              >
-                <div className="graphic-design portfolio-item">
-                  <img
-                    onClick={() =>
-                      this.setState({
-                        selectedImage: "1",
-                        imgPaths: ["cake.png", "farmer.jpeg"],
-                      })
-                    }
-                    id="1"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%", cursor:'pointer' }}
-                    src={brunch}
-                  />
-                </div>
-                <div className="graphic-design portfolio-item">
-                  <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "2", imgPaths: [""] })
-                    }
-                    id="2"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%", cursor:'pointer' }}
-                    src={cake}
-                  />
-                </div>
-                <div className="graphic-design portfolio-item">
-                  <img
-                    onClick={() =>
-                      this.setState({ selectedImage: "3", imgPaths: [""] })
-                    }
-                    id="3"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%", cursor:'pointer' }}
-                    src={kushcake}
-                  />
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-            {window.location.pathname === "/portfolio/drawing" ? (
-              <div
-                className="drawing-section portfolio-section"
-                style={{ display: "flex" }}
-              >
-                <div className="drawing portfolio-item">
-                  <img
-                    id="4"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%" }}
-                    src={stillLife}
-                  />
-                </div>
-                <div className="drawing portfolio-item">
-                  <img
-                    id="5"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%" }}
-                    src={gabe}
-                  />
-                </div>
-                <div className="drawing portfolio-item">
-                  <img
-                    id="6"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%" }}
-                    src={selfPortrait}
-                  />
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-            {window.location.pathname === "/portfolio/painting" ? (
-              <div
-                className="painting-section portfolio-section"
-                style={{ display: "flex" }}
-              >
-                <div className="painting portfolio-item">
-                  <img
-                    id="7"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%" }}
-                    src={woman}
-                  />
-                </div>
-                <div className="painting portfolio-item">
-                  <img
-                    id="8"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%" }}
-                    src={farmer}
-                  />
-                </div>
-                <div className="painting portfolio-item">
-                  <img
-                    id="9"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%" }}
-                    src={sunnyTits}
-                  />
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-            {window.location.pathname === "/portfolio/photography" ? (
-              <div
-                className="photography-section portfolio-section"
-                style={{ display: "flex" }}
-              >
-                <div className="photography portfolio-item">
-                  <img
-                    id="10"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%" }}
-                    src={windowGirl}
-                  />
-                </div>
-                <div className="photography portfolio-item">
-                  <img
-                    id="11"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%" }}
-                    src={taco}
-                  />
-                </div>
-                <div className="photography portfolio-item">
-                  <img
-                    id="12"
-                    className="portfolio-image"
-                    width="80%"
-                    style={{ marginLeft: "10%" }}
-                    src={kid}
-                  />
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-          </div>
-        ) : (
-          <PortfolioItemDetails itemId={this.state.selectedImage} goBack = {setSelectedImageFalse} imgPaths = {this.state.imgPaths}/>
-        )}
+      
+      <div  style={{display:'flex', flexWrap:'wrap'}}>
+        {
+          category in images ?
+          !this.state.selectedImage ? images[category].filter(elem=>elem.includes('1')).map(ele=>(
+          
+         <div style={{padding:'3px'}}> <img src={"/images/"+ele} width='320px' style={{cursor:'pointer', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset', padding:'12px'}} onClick={()=>this.setState({selectedImage:ele.substring(0, ele.length-6)})}/></div>
+        )):
+        <div>
+        <button
+        onClick={()=> this.setState({selectedImage:false})}
+        className='go-back'
+      >
+       Go Back
+      </button>
+        {images[category].filter(elem=>elem.includes(this.state.selectedImage)).map(ele=>(
+          <img src={"/images/"+ele}  width='320px' style={{ boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset', padding:'12px'}}></img>
+
+        ))}</div> :'Designs coming soon!'}
+        </div>
       </div>
     );
   }

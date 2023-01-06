@@ -44,7 +44,7 @@ const Navbar = () => {
               </div>
             </li>
 
-          {/*  <li className="nav-item dropdown">
+            <li className="nav-item dropdown">
               <div
                 className="nav-link dropdown-toggle"
                 href="#"
@@ -70,7 +70,7 @@ const Navbar = () => {
                   Photography
                 </a>
               </div>
-  </li>*/}
+  </li>
         {    /*<li className="nav-item active">
               <div
                 className="nav-link"
