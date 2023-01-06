@@ -89,10 +89,7 @@ const Contact = () => {
           {messageForUser}
         </span>
       </div>
-      <div className = 'contact-inspiration' style={{textAlign:'left', display:'flex', flexDirection:'column', padding:'20px'}}>
-      <span>- MY INSPRIATION</span>
-<span>While growing up in a household where art was greatly appreciated, I knew that I wanted to make the world a more colorful and creative place. Every piece tells a story, and a snippet from my journey as an artist. Come along with me as I explore my perspective of fine arts.</span>
-      </div>
+
     </div>
   );
 };
